@@ -13,7 +13,7 @@ Lead developer for data processing pipeline design and development, moving windo
 NASA Jet Propulsion Laboratory 329G
 
 Jouni I. Susiluoto (he/him)<br>
-[jouni.i.susiluoto@jpl.nasa.gov](mailto:jouni.i.susiluoto@jpl.nasa.gov)
+[jouni.i.susiluoto@jpl.nasa.gov](mailto:jouni.i.susiluoto@jpl.nasa.gov)<br>
 Technical contributor for methodology development, co- developer of Julia code for Kalman filtering recursion.
 NASA Jet Propulsion Laboratory 398L
 
@@ -28,11 +28,11 @@ Concept development and project management<br>
 Chapman University
 
 Glynn C. Hulley (he/him)<br>
-[glynn.hulley@jpl.nasa.gov](mailto:glynn.hulley@jpl.nasa.gov)
-Advised on technical and scientific requirements for application and mission integration.
+[glynn.hulley@jpl.nasa.gov](mailto:glynn.hulley@jpl.nasa.gov)<br>
+Advised on technical and scientific requirements for application and mission integration.<br>
 NASA Jet Propulsion Laboratory 329G
 
 Nimrod Carmon (he/him)<br>
-[nimrod.carmon@jpl.nasa.gov](mailto:nimrod.carmon@jpl.nasa.gov)
-Technical contributor for data processing, validation/verification, and hyperspectral resampling
+[nimrod.carmon@jpl.nasa.gov](mailto:nimrod.carmon@jpl.nasa.gov)<br>
+Technical contributor for data processing, validation/verification, and hyperspectral resampling<br>
 NASA Jet Propulsion Laboratory 398L
