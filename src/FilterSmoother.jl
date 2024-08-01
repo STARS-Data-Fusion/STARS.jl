@@ -1,7 +1,7 @@
 module FilterSmoother
 
 
-export KSModel #, filter, smoother, filter_series, smooth_series, filter_and_smooth!
+export KSModel, filter, smoother, filter_series, smooth_series, conditional_sim, conditional_sim_series
 
 
 using LinearAlgebra
