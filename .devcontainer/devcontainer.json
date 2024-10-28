@@ -1,0 +1,30 @@
+{
+    "name": "Julia Dev Environment",
+    "image": "ghcr.io/stars-data-fusion/stars:latest",
+    "postCreateCommand": "julia --project=. -e 'using Pkg; Pkg.instantiate(); Pkg.precompile()' > /var/log/installation.log 2>&1",
+    "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash",
+        "julia.executionEnvironment": "workspace",
+        "julia.useRevise": true,
+        "julia.environmentPath": "/workspaces/STARS.jl",
+        "files.autoSave": "onWindowChange"
+    },
+    "extensions": [
+        "julialang.language-julia",
+        "ms-toolsai.jupyter",
+        "github.vscode-pull-request-github",
+        "ms-vscode-remote.remote-containers"
+    ],
+    "forwardPorts": [8888],
+    "features": {
+        "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+    },
+    "workspaceFolder": "/workspaces/STARS.jl",
+    "customizations": {
+        "codespaces": {
+            "openFiles": [
+                "/workspaces/STARS.jl/examples/STARS_fusion_example.ipynb"
+            ]
+        }
+    }
+}
