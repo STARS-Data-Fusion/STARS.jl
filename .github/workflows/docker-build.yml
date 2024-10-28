@@ -28,4 +28,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: ghcr.io/STARS-Data-Fusion/julia-devcontainer:latest
+          tags: ghcr.io/stars-data-fusion/stars:latest
