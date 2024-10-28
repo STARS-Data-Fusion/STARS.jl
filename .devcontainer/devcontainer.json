@@ -1,17 +1,19 @@
 {
     "name": "Julia Dev Environment",
     "image": "julia:1.10",
-    "postCreateCommand": "julia --project=. -e 'using Pkg; Pkg.instantiate(); Pkg.precompile()'",
+    "postCreateCommand": "julia --project=. -e 'using Pkg; Pkg.instantiate(); Pkg.precompile()' > /var/log/installation.log 2>&1",
     "settings": {
         "terminal.integrated.defaultProfile.linux": "bash",
         "julia.executionEnvironment": "workspace",
         "julia.useRevise": true,
-        "julia.environmentPath": "/workspaces/STARS.jl"
+        "julia.environmentPath": "/workspaces/STARS.jl",
+        "files.autoSave": "onWindowChange"
     },
     "extensions": [
         "julialang.language-julia",
         "ms-toolsai.jupyter",
-        "github.vscode-pull-request-github"
+        "github.vscode-pull-request-github",
+        "ms-vscode-remote.remote-containers"
     ],
     "forwardPorts": [8888],
     "features": {
@@ -23,12 +25,6 @@
             "openFiles": [
                 "/workspaces/STARS.jl/examples/STARS_fusion_example.ipynb"
             ]
-        },
-        "vscode": {
-            "settings": {
-                "jupyter.notebookFileRoot": "/workspaces/STARS.jl/examples",
-                "files.autoSave": "onWindowChange"
-            }
         }
     }
 }
