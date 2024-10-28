@@ -23,6 +23,12 @@
             "openFiles": [
                 "/workspaces/STARS.jl/examples/STARS_fusion_example.ipynb"
             ]
+        },
+        "vscode": {
+            "settings": {
+                "jupyter.notebookFileRoot": "/workspaces/STARS.jl/examples",
+                "files.autoSave": "onWindowChange"
+            }
         }
     }
 }
