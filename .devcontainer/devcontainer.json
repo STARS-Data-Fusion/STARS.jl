@@ -1,0 +1,23 @@
+{
+    "name": "Julia Dev Environment",
+    "image": "mcr.microsoft.com/vscode/devcontainers/julia:1.10",
+    "postCreateCommand": "julia --project=. -e 'using Pkg; Pkg.instantiate(); Pkg.precompile()'",
+    "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash",
+        "julia.executionEnvironment": "workspace",
+        "julia.useRevise": true
+    },
+    "extensions": [
+        "julialang.language-julia",
+        "ms-toolsai.jupyter",
+        "github.vscode-pull-request-github"
+    ],
+    "forwardPorts": [8888],
+    "features": {
+        "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+    },
+    "hostRequirements": {
+        "cpus": 2,
+        "memory": "4gb"
+    }
+}
