@@ -1,11 +1,12 @@
 {
     "name": "Julia Dev Environment",
-    "image": "ghcr.io/julia-vscode/julia-devcontainer",
+    "image": "ghcr.io/julia-vscode/julia-devcontainer:1.10",
     "postCreateCommand": "julia --project=. -e 'using Pkg; Pkg.instantiate(); Pkg.precompile()'",
     "settings": {
         "terminal.integrated.defaultProfile.linux": "bash",
         "julia.executionEnvironment": "workspace",
-        "julia.useRevise": true
+        "julia.useRevise": true,
+        "julia.environmentPath": "/workspaces/STARS.jl"
     },
     "extensions": [
         "julialang.language-julia",
@@ -15,5 +16,13 @@
     "forwardPorts": [8888],
     "features": {
         "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+    },
+    "workspaceFolder": "/workspaces/STARS.jl",
+    "customizations": {
+        "codespaces": {
+            "openFiles": [
+                "/workspaces/STARS.jl/examples/STARS_fusion_example.ipynb"
+            ]
+        }
     }
 }
