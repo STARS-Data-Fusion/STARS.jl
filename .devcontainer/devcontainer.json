@@ -1,6 +1,6 @@
 {
     "name": "Julia Dev Environment",
-    "image": "julia:1.10",
+    "image": "ghcr.io/STARS-Data-Fusion/julia-devcontainer:latest",
     "postCreateCommand": "julia --project=. -e 'using Pkg; Pkg.instantiate(); Pkg.precompile()' > /var/log/installation.log 2>&1",
     "settings": {
         "terminal.integrated.defaultProfile.linux": "bash",
